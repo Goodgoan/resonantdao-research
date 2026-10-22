@@ -1,0 +1,25 @@
+HTTP/1.1 200 OK
+Date: Mon, 19 Oct 2026 22:19:50 GMT
+Content-Type: text/html; charset=utf-8
+Transfer-Encoding: chunked
+Connection: keep-alive
+CF-Ray: a4d32aa42e5f5329-AMS
+CF-Cache-Status: MISS
+Cache-Control: no-cache
+Set-Cookie: ab_experiment_sampled=%22false%22; Max-Age=31536000; Domain=substack.com; Path=/; Expires=Tue, 19 Oct 2027 22:19:50 GMT; HttpOnly; Secure; SameSite=Lax
+Set-Cookie: ab_testing_id=%22dce3bccc-4116-4ce7-891a-f072e01e11ea%22; Max-Age=31536000; Domain=substack.com; Path=/; Expires=Tue, 19 Oct 2027 22:19:50 GMT; HttpOnly; Secure; SameSite=Lax
+set-cookie: __cf_bm=ayaWHNw6tReQxsAAfdB1.Jvpu1ehTSX3tQvrj54RR4g-1792448389.785926-1.0.1.1-JoKRYGa6OhtzlvFhMpS9AZryFIvEgNCV8MYvaK_npoaDXPmpCxRCiCwc8dGx5nolqnO3OSzBGA2eHhFCnkmZ_p9FlHz.aWULt7ezPOpmXuq3Vyfv80YQzcH9KJdqy8cf; HttpOnly; SameSite=None; Secure; Path=/; Domain=substack.com; Expires=Mon, 19 Oct 2026 22:49:50 GMT
+x-service: web
+Link: <https://substackcdn.com>; rel=preconnect
+Server: cloudflare
+x-sub: augmentedmind
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Vary: Accept-Encoding
+content-security-policy: frame-ancestors 'self' https://*.substack.com https://substack.com
+content-security-policy-report-only: frame-src 'self' data: https://www.youtube.com https://www.youtube-nocookie.com https://player.vimeo.com https://open.spotify.com https://anchor.fm https://podcasters.spotify.com https://creators.spotify.com https://w.soundcloud.com https://bandcamp.com https://*.bandcamp.com https://embed.music.apple.com https://embed.podcasts.apple.com https://instagram.com https://www.instagram.com https://read.amazon.com https://iframely.net https://cdn.iframe.ly https://team-hosted-public.s3.amazonaws.com https://*.dwcdn.net https://datawrapper.de https://www.datawrapper.de https://tiktok.com https://www.tiktok.com https://lichess.org https://embed.polymarket.com https://polymarket.com https://manifold.markets https://metaculus.com https://www.metaculus.com https://embed.bsky.app https://delphi.ai https://www.delphi.ai https://delphi.build https://app.askdewey.co https://*.substackcode.com https://js.stripe.com https://hooks.stripe.com https://withpersona.com https://*.withpersona.com https://www.google.com https://www.gstatic.com https://www.googletagmanager.com https://www.facebook.com https://tr.snapchat.com https://substack.com https://*.substack.com; script-src 'self' 'report-sample' 'wasm-unsafe-eval' https://substackcdn.com https://browser.sentry-cdn.com https://cdn.parsely.com https://cdn.withpersona.com https://cdnjs.cloudflare.com https://decagon.ai https://js.sentry-cdn.com https://js.stripe.com https://static.ads-twitter.com https://static.chartbeat.com https://static.cloudflareinsights.com https://www.datadoghq-browser-agent.com https://www.google.com https://www.googletagmanager.com https://www.instagram.com https://googleads.g.doubleclick.net 'nonce-neV6LaK9AXQcSkJGT1W-Hw' 'sha256-oNUpYJTjyv6mHx4JzPCmMhElUii2dwkB0MFj/41GTy4=' 'sha256-6mPxECCUmrjOqGu7V7AJtjO9bkmffsxNz7vhLmOvV/U='; worker-src 'self' blob:; report-uri https://o350427.ingest.us.sentry.io/api/4512007192838144/security/?sentry_key=0dd7d049b002dc4a3455fefa8a530c88&sentry_environment=production
+x-cluster: substack
+x-deploy: 498114f36f
+x-powered-by: Express
+x-served-by: Substack
+alt-svc: h3=":443"; ma=86400
+

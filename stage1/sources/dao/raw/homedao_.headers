@@ -1,0 +1,24 @@
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 7407
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Mon, 19 Oct 2026 21:21:53 GMT
+Access-Control-Allow-Origin: *
+ETag: "6ad689f1-1cef"
+expires: Mon, 19 Oct 2026 22:28:00 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: 2F52:23F467:12FAE66:1321236:6AD69717
+x-github-edge-region: fra
+Accept-Ranges: bytes
+Age: 0
+Date: Mon, 19 Oct 2026 22:18:00 GMT
+Via: 1.1 varnish
+X-Served-By: cache-rtm-ehrd2290030-RTM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1792448280.035377,VS0,VE119
+Vary: Accept-Encoding
+X-Fastly-Request-ID: 536e7e3772ccd52b09c54a5acdeb12797b46cb6f
+

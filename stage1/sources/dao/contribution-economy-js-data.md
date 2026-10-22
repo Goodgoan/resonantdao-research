@@ -1,0 +1,71 @@
+# Snapshot: contribution-economy page, embedded JS data (22 class definitions and 4.4 payment table)
+
+URL: https://resonantdao.com/contribution-economy/
+Fetched: 2026-10-20 (curl raw HTML, lines 900-960 of the saved HTML; the 4.4 table and card definitions are rendered client-side from this data). Untrusted content.
+Server Last-Modified: Mon, 19 Oct 2026 21:21:53 GMT
+
+---
+
+```js
+/* ---------- data: the 22 classes ---------- */
+const W='img/';
+const CARDS=[
+{n:'0',name:'The Fool',cls:'Crossing',img:'RWS_Tarot_00_Fool',def:'The act of crossing a threshold: entering the community, or pioneering a path before precedent or guarantee.',bound:'Every other class presupposes a path; the Fool opens one. Entry alone may be zero; a verified crossing others follow is contribution, once per path.'},
+{n:'1',name:'The Magician',cls:'Building',img:'RWS_Tarot_01_Magician',def:'The act of making: transforming intention into a real, shipped artifact.',bound:'Against Chariot: making from nothing versus driving existing work toward a goal. The signature is the artifact, not the momentum.'},
+{n:'2',name:'The High Priestess',cls:'Recording',img:'RWS_Tarot_02_High_Priestess',def:'The act of capturing and preserving knowledge: making the known findable and attributable.',bound:'The three knowledge classes divide by operation: Priestess records, Hierophant transmits, Hermit discovers. The verb here is preservation.'},
+{n:'3',name:'The Empress',cls:'Nurturing',img:'RWS_Tarot_03_Empress',def:'The act of tending to other members: creating the conditions in which growth is possible.',bound:'The object is a person\u2019s growth, not an artifact or a rule. Frequently produces no deliverable, which is why the scale must be configured to weigh it (Justice).'},
+{n:'4',name:'The Emperor',cls:'Structuring',img:'RWS_Tarot_04_Emperor',def:'The act of creating or changing the rules of the game: the frame, not a move inside it.',bound:'Against Strength: changing the rules versus resolving a live conflict. Against Justice: setting the rule of measurement versus performing a measurement.'},
+{n:'5',name:'The Hierophant',cls:'Teaching',img:'RWS_Tarot_05_Hierophant',def:'The act of transmitting knowledge: making another person able without re-deriving.',bound:'Against Priestess: records make knowledge findable; teaching makes a person able. The output is competence in another member, not a document.'},
+{n:'6',name:'The Lovers',cls:'Joining',img:'RWS_Tarot_06_Lovers',def:'The act of creating an alignment: a union of two that exceeds the parts.',bound:'Against Chariot: joining two into something neither had alone versus driving one force. The signature is the union, not the motion.'},
+{n:'7',name:'The Chariot',cls:'Driving',img:'RWS_Tarot_07_Chariot',def:'The act of directed momentum: pushing existing work toward a goal under constraints.',bound:'Wins without reins: the signature is the will that holds two opposing forces in one direction, not control of one. The reward must not pay for damage done along the way.'},
+{n:'8',name:'Strength',cls:'Resolving',img:'RWS_Tarot_08_Strength',def:'The act of dissolving a live conflict through patience rather than force or decree.',bound:'Against Emperor: relational tension resolved without a rule change. Against Temperance: a specific conflict versus an ongoing balance.'},
+{n:'9',name:'The Hermit',cls:'Discovering',img:'RWS_Tarot_09_Hermit',def:'The act of finding the not-yet-known: deep, long-horizon inquiry.',bound:'Hermit discovers the unknown; Priestess records the known; Hierophant transmits it. Against Fool: the Hermit delivers understanding, the Fool opens a path; mapping a route others can walk is a crossing, not a finding. The output is new understanding, and it often never ships.'},
+{n:'10',name:'Wheel of Fortune',cls:'Cycling',img:'RWS_Tarot_10_Wheel_of_Fortune',def:'The act of keeping the recurring flow turning: the rhythm, not a one-shot.',bound:'The signature is recurrence. A one-shot build is the Magician; the thing that keeps coming around is the Wheel.'},
+{n:'11',name:'Justice',cls:'Weighing',img:'RWS_Tarot_11_Justice',def:'The act of fair accounting: measuring merit and distributing according to cause and effect.',bound:'Justice weighs merit for one contribution; Judgement reckons the cycle as a whole at its end; Moon verifies whether a claim is real.'},
+{n:'12',name:'The Hanged Man',cls:'Re-seeing',img:'RWS_Tarot_12_Hanged_Man',def:'The act of pausing to see a thing from a new angle: a deliberate reframe, not an ending.',bound:'Against Death: pauses and reframes versus ends. Against Hermit: re-sees the known from a new side versus finds the unknown.'},
+{n:'13',name:'Death',cls:'Ending',img:'RWS_Tarot_13_Death',def:'The act of a chosen ending: closing something and keeping what was learned.',bound:'Against Tower: a chosen ending versus an unplanned collapse. Against World: closes a part or a failure versus the successful completion of the whole.'},
+{n:'14',name:'Temperance',cls:'Balancing',img:'RWS_Tarot_14_Temperance',def:'The act of holding an ongoing blend: sustainability and the long-term health of the whole.',bound:'Against Strength: maintains an ongoing balance versus resolves a specific conflict. Against Wheel: the health of the system versus the rhythm of the money.'},
+{n:'15',name:'The Devil',cls:'Exposing',img:'RWS_Tarot_15_Devil',def:'The act of naming and monitoring the system\u2019s own corruption: the shadow made visible.',bound:'Against Moon: exposes an incentive vector versus verifies a claim. Against Tower: the slow corruption the community believes in versus the sudden collapse.'},
+{n:'16',name:'The Tower',cls:'Responding',img:'RWS_Tarot_16_Tower',def:'The act of responding to an unplanned collapse: the incident, the black swan.',bound:'Against Death: unplanned collapse versus chosen ending. Must be prepared to be triggered, and the trigger must be verified as truth rather than manipulation.'},
+{n:'17',name:'The Star',cls:'Meaning',img:'RWS_Tarot_17_Star',def:'The act of making meaning and vision public: the why that orients the whole.',bound:'Against Sun: the why, forward-looking meaning, versus the what-we-did, backward-looking success made public.'},
+{n:'18',name:'The Moon',cls:'Verifying',img:'RWS_Tarot_18_Moon',def:'The act of illuminating the unverified: separating the true from the false before the community acts.',bound:'Against Justice: verifies truth versus weighs merit. Against Devil: checks a claim versus exposes an incentive vector.'},
+{n:'19',name:'The Sun',cls:'Celebrating',img:'RWS_Tarot_19_Sun',def:'The act of making success public: recognition visible to everyone.',bound:'Against Star: the what-worked versus the why. The reward is partly itself: visibility is a contribution and a reward at once.'},
+{n:'20',name:'Judgement',cls:'Reckoning',img:'RWS_Tarot_20_Judgement',def:'The act of end-of-cycle evaluation: calling the record and firing the reward.',bound:'Against Justice: the cycle reckoning, the whole at its end, versus the per-action weighing. Judgement is the trigger; Justice is the fairness of what it distributes.'},
+{n:'21',name:'The World',cls:'Integrating',img:'RWS_Tarot_21_World',def:'The act of completing the whole: the successful end-to-end integration, and the seed of the next cycle.',bound:'Against Death: successful completion of the whole versus a chosen ending of a part. The World is always the seed of the next Fool.'}
+];
+const SYSTEMIC=new Set([4,11,15,16,18,20]);
+
+/* ---------- data: payment specification ---------- */
+const PAY=[
+[0,'Fool','A threshold crossed: verified entry or re-entry, or a pioneering first step into territory the community has not worked before','Measure C_0; entry alone may be zero; a crossing that opens a verified, followable path earns non-zero value under an approved rule','One identity record; no payment for joining alone; a threshold is crossed once per path; pioneering checked against prior art and later followers'],
+[1,'Magician','Artifact shipped and accepted by its beneficiary node','Delivery bounty, sized by scope and complexity, paid on acceptance','Paid on acceptance, never on submission; duplicate and prior-art check'],
+[2,'Priestess','Record created, indexed, attributed, then retrieved or cited later','Base credit on publication, plus a usage bonus each time it is consulted','Usage bonus paid on real retrieval, not volume; spam floor with a minimum quality gate'],
+[3,'Empress','A member the contributor supported later ships accepted work, or a member in difficulty is met and continues','Nurture multiplier: percentage attribution on enabled members\u2019 output, for a bounded window; verified presence counts when the beneficiary confirms its effect','Paid on the other\u2019s growth or continued engagement, never on hours or messages; per-mentee cap; cycle-gated'],
+[4,'Emperor','A rule or process change proposed, then adopted through governance','Accrue C_4; optional governed $RES compensation; contribution standing is non-transferable','Conflict exclusion; later harm can trigger review; no self-approval'],
+[5,'Hierophant','A learner demonstrates competence: assessment passed, or accepted work shipped in that area','Paid per capability transferred, evidenced by learner outcomes','Pays on demonstrated ability, not lectures given or attendance'],
+[6,'Lovers','An alliance or collaboration forms and ships a joint output','Shared pool for the union, split by the ratio the parties declared at formation','Requires a genuine joint artifact, something neither shipped before alone; self-dealing check between paired identities'],
+[7,'Chariot','Milestone reached inside a declared timebox or campaign','Campaign bounty on milestone completion','Net of harm: reward reduced by measured damage to nodes passed through, gated by a community health signal'],
+[8,'Strength','A live dispute closes with both parties accepting the resolution','Resolution token to the resolver or resolvers, sized by dispute severity','Resolver must be a non-party; no payout if the resolver manufactured the dispute; acceptance by both parties required'],
+[9,'Hermit','Research deliverable delivered, or its direction adopted by a decision','Deep-work bounty at declared milestones, plus an adoption bonus when findings steer a real decision','Pays on adoption and steering, not length; timeboxed so open-ended research does not accrue indefinitely; first-entry into a new territory is the Fool crossing, not a Hermit finding; cycle-gated'],
+[10,'Wheel','A full cycle executed on schedule: bounty season run, vesting processed','Recurring operations retainer per completed cycle','Paid on the cycle completing fairly, measured by coverage and participation, not merely on time; if payouts resemble a lottery, the retainer is withheld'],
+[11,'Justice','A distribution event or audit performed','Accrue C_11; fixed governed review compensation may apply; the audit does not grant unchecked authority','No self-weighting; calibration audit; required review path and appeal'],
+[12,'Hanged Man','A documented reframe concludes and changes a real decision','Reflection token, paid only when the re-seeing produces the next move','Paid on decision-changed, never on pause duration; a pause ending in no decision pays nothing'],
+[13,'Death','Closure ritual completed: project retired, resources released, learnings archived','Closure token to the one who ends it cleanly','Requires the Priestess record, learning captured, and verified resource release; abandonment is not closure'],
+[14,'Temperance','System health metrics held in band across a full period','Sustainability retainer while the balance holds','Paid on the system not tipping, not on activity; stall detection, since a frozen decision is not a balance'],
+[15,'Devil','A named incentive distortion validated as real by audit or governance','Integrity bounty in tokens, deliberately among the largest payouts in the system','Must be specific and validated; manufactured accusations penalize the accuser; bounty paid independent of, and unblockable by, the accused'],
+[16,'Tower','A collapse signal fires and is verified as true, not manipulation','Crisis token on stabilization, sized by severity: the response pays, the incident never does','Trigger verification, truth rather than the Devil\u2019s manipulation, and pay-on-response: nobody profits from causing or merely spotting the collapse'],
+[17,'Star','A meaning or vision artifact published, producing orientation: cited by new members, retention or alignment signal','Meaning contribution paid on the orientation effect, not on publication','Orientation test: pays only when the artifact demonstrably orients; slogans that replace work are flagged, not paid'],
+[18,'Moon','A pending claim verified to resolution, confirmed or refuted','Verification token per completed check, paid regardless of which way the check lands','Accuracy tracking over time, a verifier must be right more than chance; time-bound so verification does not become a gate'],
+[19,'Sun','A verified contribution made public with attribution','Recognition token plus visibility boost to the contributor; small credit to the recognizer','Tied to a Justice-verified contribution record: the work must exist before it can be celebrated; popularity alone does not pay'],
+[20,'Judgement','Cycle end reached and record called','The trigger itself: reads the Justice-configured weights, evaluates all cycle-gated accruals, fires the payouts','Evaluation criteria fixed before the cycle starts, no retrofitted rules; record fully readable by every member; refuses to fire without a current Justice calibration'],
+[21,'World','A whole completed end-to-end, all integration corners verified: scope, quality, adoption, closure','Completion token to the integrators, plus seeds the next cycle: allocates the next Fool pool, re-opens entry','Four-corner checklist must pass, since partial delivery is Chariot not World; a World that closes the system instead of seeding the next Fool is a failed World']
+];
+
+/* ---------- render card grid ---------- */
+const grid=document.getElementById('cardgrid');
+CARDS.forEach(c=>{
+  const num=parseInt(c.n,10);
+  const el=document.createElement('article');
+  el.className='card rv'+(SYSTEMIC.has(num)?' sys':'');
+  el.innerHTML=`
+```
